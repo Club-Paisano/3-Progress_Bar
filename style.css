@@ -1,0 +1,113 @@
+/*
+https://colorhunt.co/palette/202087
+base1: #f6f4e6
+base2: #fddb3a
+base3: #52575d
+base4: #41444b
+Cutive Mono
+font-family: 'Cutive Mono', monospace;
+Paytone One
+font-family: 'Paytone One', sans-serif;
+
+*/
+
+:root {
+  --base1: #f6f4e6;
+  --base2: #fddb3a;
+  --base3: #52575d;
+  --base4: #41444b;
+  --progress: 0%;
+}
+
+
+body {
+  font-size: 1em;
+  font-family: 'Cutive Mono', monospace;
+  color: var(--base1);
+  background-color: var(--base3);
+
+}
+
+ header {
+   display: flex;
+   justify-content: center;
+   padding: 50px 20px 50px 0;
+   background-color: var(--base4);
+   border: 2px solid #000;
+   border-radius: 0 0 20px 20px;
+   margin-bottom: 70px;
+ }
+
+
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+}
+
+article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+section {
+  width: 300px;
+  text-align: center;
+}
+section h1 {
+  margin-bottom: 20px;
+}
+
+
+footer {
+  background-color: var(--base4);
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.15;
+  text-align: center;
+  padding: 20px;
+}
+h1, h2 {
+  font-family: 'Paytone One', sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-decoration: overline underline var(--base4);
+}
+h2 {
+  font-size: 1.25;
+}
+header a {
+  margin-right: 30px;
+}
+a {
+  text-decoration: none;
+  color: var(--base1);
+  font-family: 'Paytone One', sans-serif;
+}
+
+div.progress {
+  width: var(--progress);
+  position: fixed;
+  top: 0;
+  height: 10px;
+  background-color: var(--base2);
+}
+
+.selected {
+  color: var(--base2);
+}
+
+p.progressNumber {
+  position: fixed;
+  top:0;
+  left: 50%;
+  color: var(--base1);
+  font-weight: bold;
+  font-family: 'Paytone One', sans-serif;
+}
